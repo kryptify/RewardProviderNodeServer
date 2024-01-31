@@ -7,7 +7,8 @@ const web3 = new Web3(providerURL)
 
 const defaultInfo = {
   // nonce: 0,
-  lastBlockForEvents: -1
+  lastBlockForEvents: 1155000,
+  lastBlockForFee: 1162158,
 }
 
 const saveInfo = (info) => {

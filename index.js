@@ -255,10 +255,10 @@ async function main() {
   await processT1Reward()
 
   // reward distribution for T2 licensors
-  // scannedToEnd = false
-  // while (scannedToEnd == false) {
-  //   scannedToEnd = await processT2Reward()
-  // }
+  scannedToEnd = false
+  while (scannedToEnd == false) {
+    scannedToEnd = await processT2Reward()
+  }
 
   // process surplus coin burning
   await processBurnSurplusCoins()

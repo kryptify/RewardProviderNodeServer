@@ -5,10 +5,16 @@
   "chainId": 1340,
   "gasLimit": 5000000,
   "gasPrice": 100000000,
-  "contractAddress": "0x74D1d0d9Cc3989AE3Ab6A9243B8D1775ff4eC6a0",
+  "contractAddress": "0xBb86fdbD07a0E6eD9a7167CcCa0dee44A3De3b1d",
   "abi": [
     {
-      "inputs": [],
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "_bonusPaymentContract",
+          "type": "address"
+        }
+      ],
       "stateMutability": "nonpayable",
       "type": "constructor"
     },
@@ -401,6 +407,19 @@
     {
       "inputs": [],
       "name": "bonusHandler",
+      "outputs": [
+        {
+          "internalType": "address",
+          "name": "",
+          "type": "address"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "name": "bonusPaymentContract",
       "outputs": [
         {
           "internalType": "address",
@@ -956,6 +975,19 @@
         }
       ],
       "name": "updateBonusHandler",
+      "outputs": [],
+      "stateMutability": "nonpayable",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "address",
+          "name": "newContract",
+          "type": "address"
+        }
+      ],
+      "name": "updateBonusPaymentContract",
       "outputs": [],
       "stateMutability": "nonpayable",
       "type": "function"
